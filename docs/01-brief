@@ -1,0 +1,57 @@
+Task 1 – Project Brief
+1. Project Name
+NutriTrack: Digital Child Nutrition Monitoring and Reporting Database System
+2. Problem Statement
+Barangay Pugay, San Jose, Camarines Sur needs an organized and reliable system for recording and monitoring the nutritional status of children in the barangay. Managing children's personal information, nutrition assessments, measurements, feeding program attendance, and follow-up records manually can make monitoring and record retrieval difficult.
+NutriTrack was developed to centralize these records into a relational database system, allowing Barangay Nutrition Scholars (BNS) and authorized personnel to efficiently manage children's nutrition information, monitor their nutritional status, and maintain organized records for reporting.
+3. Target Users
+* Barangay Nutrition Scholar (BNS) – manages children's records, conducts nutrition assessments, records measurements, monitors feeding program attendance, and maintains follow-up records.
+* Authorized Health Workers – assist in child nutrition monitoring and record management.
+* System Administrator – manages user accounts and maintains system records.
+4. Database Tables
+NutriTrack uses 11 relational database tables:
+Table
+Purpose
+barangay
+Stores barangay information
+user_account
+Stores authorized system users
+child
+Stores registered children's personal information
+guardian
+Stores parent or guardian information
+child_guardian
+Connects children with their parents or guardians
+nutrition_status
+Stores nutritional status classifications
+assessment
+Stores child nutrition assessment records
+measurement
+Stores children's anthropometric measurements
+feeding_program
+Stores supplementary feeding and hot meal programs
+feeding_attendance
+Records children's attendance in feeding programs
+follow_up
+Stores follow-up monitoring records
+5. Must-Have Features
+* Child registration and information management
+* Parent and guardian record management
+* Nutrition assessment recording
+* Recording of weight, height, and MUAC measurements
+* Monitoring of children's nutritional status
+* Viewing historical assessments per child
+* Feeding program management
+* Feeding attendance recording and monitoring
+* Follow-up record management
+* Organized storage and retrieval of nutrition records
+6. Nice-to-Have Features
+* Nutrition monitoring dashboard
+* Search and filtering of child records
+* Improved responsive interface for mobile devices
+7. Similar Applications
+NutriTrack is similar to child nutrition monitoring systems and community health information systems that organize children's demographic information, growth measurements, nutrition classifications, feeding program participation, and follow-up monitoring records.
+8. Project Scope
+NutriTrack focuses on digital child nutrition monitoring and reporting for Barangay Pugay, San Jose, Camarines Sur. The system manages children's personal records, guardian information, nutrition assessments, anthropometric measurements, nutritional classifications, feeding program attendance, and follow-up monitoring.
+For Week 14, the project will focus on designing the web application's interface and developing a static HTML/CSS prototype using the existing NutriTrack database structure. Backend programming and database integration will be implemented in the succeeding weeks.
+
