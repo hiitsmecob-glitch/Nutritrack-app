@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assessments · NutriTrack</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="brand"><strong>NutriTrack</strong><span>Child Nutrition Monitoring<br>Barangay Pugay, San Jose, Camarines Sur</span></div>
+    <nav aria-label="Main menu">
+      <a href="#">Dashboard</a>
+      <a href="#">Children &amp; Guardians</a>
+      <a href="list.html" aria-current="page">Assessments</a>
+      <a href="#">Feeding Programs</a>
+      <a href="#">Follow-ups</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <div class="page-head">
+      <h1>Assessments</h1>
+      <a href="form.html" class="btn">+ New assessment</a>
+    </div>
+
+    <section class="card" aria-label="Search">
+      <form class="search" action="#" method="get" role="search">
+        <div>
+          <label for="q">Search by child name</label>
+          <input id="q" name="q" type="search" placeholder="Type a name...">
+        </div>
+        <div>
+          <label for="status_id">Nutrition status</label>
+          <select id="status_id" name="status_id">
+            <option value="">All</option>
+            <option value="1">NORMAL</option>
+            <option value="2">UNDERWEIGHT</option>
+            <option value="3">STUNTED</option>
+            <option value="4">WASTED</option>
+            <option value="5">OVERWEIGHT</option>
+          </select>
+        </div>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section class="card" aria-label="Assessment records">
+      <!-- Rows copied from seed.sql (assessment + measurement + nutrition_status), newest first -->
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Child</th>
+            <th scope="col">Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">Weight</th>
+            <th scope="col">Height</th>
+            <th scope="col">MUAC</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Child">Maria Santos Reyes</td>
+            <td data-label="Date">2025-09-10</td>
+            <td data-label="Status"><span class="tag alert">UNDERWEIGHT</span></td>
+            <td data-label="Weight">10.10 kg</td>
+            <td data-label="Height">87.50 cm</td>
+            <td data-label="MUAC">12.80 cm</td>
+            <td class="actions"><a href="form.html" class="btn-secondary btn-sm" aria-label="Edit assessment of Maria Santos Reyes on 2025-09-10">Edit</a><button type="button" class="btn-danger btn-sm" aria-label="Delete assessment of Maria Santos Reyes on 2025-09-10">Delete</button></td>
+          </tr>
+          <tr>
+            <td data-label="Child">Ana Lopez Mendoza</td>
+            <td data-label="Date">2025-08-05</td>
+            <td data-label="Status"><span class="tag alert">STUNTED</span></td>
+            <td data-label="Weight">11.00 kg</td>
+            <td data-label="Height">82.00 cm</td>
+            <td data-label="MUAC">13.50 cm</td>
+            <td class="actions"><a href="form.html" class="btn-secondary btn-sm" aria-label="Edit assessment of Ana Lopez Mendoza on 2025-08-05">Edit</a><button type="button" class="btn-danger btn-sm" aria-label="Delete assessment of Ana Lopez Mendoza on 2025-08-05">Delete</button></td>
+          </tr>
+          <tr>
+            <td data-label="Child">Pedro Garcia</td>
+            <td data-label="Date">2025-07-01</td>
+            <td data-label="Status"><span class="tag">NORMAL</span></td>
+            <td data-label="Weight">8.20 kg</td>
+            <td data-label="Height">72.00 cm</td>
+            <td data-label="MUAC">14.00 cm</td>
+            <td class="actions"><a href="form.html" class="btn-secondary btn-sm" aria-label="Edit assessment of Pedro Garcia on 2025-07-01">Edit</a><button type="button" class="btn-danger btn-sm" aria-label="Delete assessment of Pedro Garcia on 2025-07-01">Delete</button></td>
+          </tr>
+          <tr>
+            <td data-label="Child">Maria Santos Reyes</td>
+            <td data-label="Date">2025-06-20</td>
+            <td data-label="Status"><span class="tag alert">UNDERWEIGHT</span></td>
+            <td data-label="Weight">9.80 kg</td>
+            <td data-label="Height">85.00 cm</td>
+            <td data-label="MUAC">12.50 cm</td>
+            <td class="actions"><a href="form.html" class="btn-secondary btn-sm" aria-label="Edit assessment of Maria Santos Reyes on 2025-06-20">Edit</a><button type="button" class="btn-danger btn-sm" aria-label="Delete assessment of Maria Santos Reyes on 2025-06-20">Delete</button></td>
+          </tr>
+          <tr>
+            <td data-label="Child">Juan Dela Cruz</td>
+            <td data-label="Date">2025-06-15</td>
+            <td data-label="Status"><span class="tag">NORMAL</span></td>
+            <td data-label="Weight">12.50 kg</td>
+            <td data-label="Height">88.40 cm</td>
+            <td data-label="MUAC">15.20 cm</td>
+            <td class="actions"><a href="form.html" class="btn-secondary btn-sm" aria-label="Edit assessment of Juan Dela Cruz on 2025-06-15">Edit</a><button type="button" class="btn-danger btn-sm" aria-label="Delete assessment of Juan Dela Cruz on 2025-06-15">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="table-foot muted"><span>Showing 1–5 of 5</span><span>‹ Prev &nbsp; 1 &nbsp; Next ›</span></div>
+    </section>
+  </main>
+
+</div>
+</body>
+</html>
